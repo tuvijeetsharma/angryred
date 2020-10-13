@@ -75,8 +75,8 @@ function component(width, height, color, x, y, type) {
         }
         this.top = function() {
         var rockbottom = myGameArea.canvas.height - this.height;
-        if (this.y > rockbottom) {
-            this.y = rockbottom;
+        if (this.y > rocktop) {
+            this.y = rocktop;
             this.gravitySpeed = 0;
         }
     }
